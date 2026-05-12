@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="system">welcome to my 1st webpage</h1>
+<p id="para">hello world
+</p>    
+<button onclick="change()">red</button>
+<br> 
+<br>
+<br>
+<button onclick="changeblue()">blue</button>
+</body>
+<script>
+   function change(){
+    document.getElementById("para").style.color = "red";
+   }
+   function changeblue(){
+    document.getElementById("para").style.color = "blue";
+   }
+   let abc = document.getElementById("para");
+    abc.style.color = "orange";
+    abc.textContent = "New value";
+
+</script>
+</html>
