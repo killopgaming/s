@@ -115,12 +115,118 @@ m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 m tall.
 GOOD LUCK 
-*/
+
 
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
 
+
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn /  (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+console.log (BMIMark, BMIJohn, markHigherBMI);
+
+const firstName = 'dev';
+const job = 'student';
+const birthYear = '2008';
+const currentYear = '2026';
+
+const dev = "I'm " + firstName + ',a ' + (currentYear - birthYear) + ' years old ' + job + ' ! ';
+console.log (dev);
+
+const devNew = ` Im  $ {firstName}, a ${currentYear - birthYear} years old ${job}! `;
+console.log (devNew);
+
+console.log("just normal text with spacing");
+console.log("with spacing\nnext line\nnext line");
+
+const age = 20
+if (age >=18) {
+  console.log (`you can start driving car`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log (`you are too young. wait another ${yearsLeft} year :)`);
+}
+
+//control structure
+if() {
+
+} else {
+
+}
+
+
+const birthYear = 2012;
+
+let century;
+if (birthYear <= 2000) {
+  let century = 20;
+} else {
+  let century = 21;
+}
+console.log(century);
+
+CHALLENGE #2
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, telling the user who has the higher BMI. The message can be either:
+
+"Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!".
+
+2. Modify the outputs above to use template literals to include the BMI values in the outputs.
+
+Example: "Mark's BMI (28.3) is higher than John's (23.9)!" or "John's BMI (29.1) is higher than Mark's (27)!".
+
+Note: Don't round the BMI values. Leave them as they are.
+
+
+
+👋 OPTIONAL: You can watch my solution in video format in the next lecture
+
+
+
+IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
+
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+
+
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn /  (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+console.log (BMIMark, BMIJohn, markHigherBMI);
+
+//console.log (`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark} !`)
+
+if (BMIJohn > BMIMark) {
+  console.log (`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark} !`)
+}else {
+  console.log (`Mark's BMI ${BMIMark} is higher than Johan's ${BMIJohn} !`)
+}
+*/
+
+const inputYear = '2026'
+console.log(Number(inputYear), inputYear) //1st one is converted to a num. while the other one is just a string
+console.log (Number(inputYear) + 18) // const converted to num in order to do the sum
+console.log(inputYear + 18); // 18 added to string 2026 which gives and output in sting which if 202618
 
 
